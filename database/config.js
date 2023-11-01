@@ -1,0 +1,15 @@
+const mongoose = require("mongoose");
+
+const ConexionDB = async () => {
+  try {
+    await mongoose.connect(process.env.DB_CNN);
+    console.log("DB Monted");
+  } catch (error) {
+    console.log(error);
+    throw new Error("Error al inicializar base de datos");
+  }
+};
+
+module.exports = {
+  ConexionDB,
+};
