@@ -17,7 +17,6 @@ app.use(express.static("Public"));
 
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/events", require("./routes/events"));
-app.use(express.json());
 
 app.listen(process.env.PORT, () => {
   console.log("Hola mudno");

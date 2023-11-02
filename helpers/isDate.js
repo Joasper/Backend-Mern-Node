@@ -1,8 +1,6 @@
 const moment = require("moment");
 
 const isDate = (value) => {
-  console.log(value, req, location, path);
-
   if (!value) {
     return false;
   }
